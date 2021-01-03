@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>Holdets Time:SpiLTEK:2020:2</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <meta charset="utf-8">
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 29, 2020 17:10:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <section>
+                    <h2>Holdets Time 2</h2>
+                </section>
+                <section>
+                    <h4>Dagens Agenda</h4>
+
+                    <ol>
+                        <li>Tidligere semesterprojekter</li>
+                        <li>Dagens gode råd</li>
+                        <li>Fremtidsmuligheder</li>
+                        <li>Pause</li>
+                        <li>Uddannelsesudvikling/Kvalitet</li>
+                        <li>Social Aktivitet</li>
+                        <li>Spørgsmål</li>
+                    </ol>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Tidligere semesterprojekter</h3>
+                </section>
+                <section>
+                    <h4>Piñata Basher</h4>
+                    <p>Simon &amp; Nils</p>
+                </section>
+                <section>
+                    <h3>Spil og spørgsmål</h3>
+                </section>
+            </section>
+            <section>
+                <h3>Dagens gode råd</h3>
+                <p class="fragment"><i>#3 Hvis I skal låne penge af nogen, så lån penge af en pessimist. De forventer dem ikke tilbage.</i></p>
+            </section>
+            <section>
+                <section>
+                    <h3>Fremtidsmuligheder</h3>
+                </section>
+                <section>
+                    <h3>Hvad kan jeg blive?</h3>
+                </section>
+                <section>
+                    <h4>Kompetenceliste</h4>
+                    <ul>
+                        <li class="fragment">Projekterleder</li>
+                        <li class="fragment">Spiludvikler</li>
+                        <li class="fragment">Selvstændig</li>
+                        <li class="fragment">Webudvikler (apps &amp; hjemmesider)</li>
+                        <li class="fragment">Konsulent</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Projektleder</h4>
+                    <p class="fragment"><a href="https://www.esoft.com/" target="_blank">eSoft</a> i Odense</p>
+                </section>
+                <section>
+                    <h4>Spiludvikler</h4>
+                    <p class="fragment"><a href="https://careers.unity.com/location/copenhagen" target="_blank">Unity</a> i København</p>
+                </section>
+                <section>
+                    <h4>Selvstændig</h4>
+                    <p class="fragment"><a href="https://kubo.education/" target="_blank">Kubo</a> fra OPTEK/SpiLTEK</p>
+                </section>
+                <section>
+                    <h4>Webudvikler</h4>
+                    <p class="fragment"><a href="https://www.houseofcode.io/" target="_blank">HouseOfCode</a> i Odense</p>
+                </section>
+                <section>
+                    <h4>Konsulent</h4>
+                    <p class="fragment"><a href="https://www.zernastudio.dk" target="_blank">Yours truly</a></p>
+                </section>
+            </section>
+            <section>
+                <h3>Pause</h3>
+                <p id="demo"></p>
+            </section>
+            <section>
+                <h3>Evalueringsskema</h3>
+                <p>Studiestartsundersøgelse i slutningen af semesteret</p>
+                <p>Studiestartsundersøgelse i slutningen af semesteret</p>
+            </section>
+            <section>
+                <h3>Social Aktivitet</h3>
+            </section>
+            <section>
+                <h3>Spørgsmål?</h3>
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script src="js/marked.js"></script>
+    <script src="js/markdown.js"></script>
+    <script>
+        Reveal.initialize();
+
+    </script>
+</body>
+
+</html>
